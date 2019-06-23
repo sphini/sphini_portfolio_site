@@ -3,17 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Sphini's site</title>
-    <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans&display=swap&subset=cyrillic" rel="stylesheet"> -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Exo+2:400,500,700|Open+Sans:400,700|Titillium+Web:400,700&display=swap&subset=cyrillic" rel="stylesheet"> -->
-<link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="main-container">
+    <header>
       <nav class="navigation" id="navbar">
-        <div class="logo-wrapper">
-          <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип Sphini" width="70" height="70"></a>
-        </div>
+        <div class="logo-wrapper"><a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип Sphini" width="70" height="70"></a></div>
         <ul class="site-navigation">
           <li><a href="#" class="current">Главная</a></li>
           <li><a href="portfolio.html">Портфолио</a></li>
@@ -21,24 +18,23 @@
           <li><a href="#">Обо мне</a></li>
         </ul>
       </nav>
-      <header>
-      </header>
+    </header>
     <main>
-        <section class="first-page-container">
-            <div class="background-header">
+      <section class="full-page-container">
+        <div class="background-greeting-page">
               <div class="container">
-                <div class="hello">
+                <div class="greeting-page-wrapper">
                   <h1>Привет<br> меня зовут Денис <br> и я <span id="typing"></span><span class="red-dot">.</span></h1>
                   <p>Здесь Вы можете оценить мои работы и связаться со мной.</p>
                   <a href="#last-portfolio" class="button btn-last-work"><span>Лучшее</span></a>
                 </div>
               </div>
               <a class="btn-lang" href="#">en/<span class="red-dot">ru</span></a>
-            </div>
-          </section>
-          <section class="last-portfolio" id="last-portfolio">
-              <div class="block2">
-                <div class="images-container">
+        </div>
+      </section>
+      <section class="best-portfolio-container">
+        <div class="best-portfolio-wrapper">
+          <div class="images-container">
                   <div class="image-container">
                     <div href="#" class="image image-1"></div>
                     <div class="image-last-action image-1-action">
@@ -133,9 +129,10 @@
                   <!-- <div class="image"></div> -->
                   <!-- <div class="image"></div> -->
                 </div>
+
               </div>
             </section>
-            <section class="full-portfolio">
+            <section class="portfolio-link">
                 <div class="background-portfolio">
                   <div class="background-blue"></div>
                   <a href="portfolio.html" class="button btn-portfolio">Мое портфолио</a>

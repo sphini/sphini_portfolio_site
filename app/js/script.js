@@ -23,3 +23,42 @@ $(function(){
       }
       prevScrollpos = currentScrollPos;
     }
+
+
+    $(document).ready(function() {
+      $('.btn-image-more').click(function(){
+          var toLoad = $(this).attr('href');
+          $('.main-container-body').hide(0,loadContent);
+          console.log(toLoad);
+
+          function loadContent() {
+            $('.main-container-body').load(toLoad,'',showNewContent());
+          }
+          function showNewContent() {
+            $('.main-container-body').show(0);
+          }
+            return false;
+      });
+
+      $('.best-image-page-close').click(function(){
+        var toLoad = $(this).attr('href');
+        $('.main-container-last-image').hide(0);
+        $('.main-container-body').show('normal');
+
+
+        });
+    });
+
+
+    function loadData() {
+      return new Promise((resolve, reject) => {
+        setTimeout(resolve, 2000);
+      })
+    }
+
+    loadData()
+    .then(() => {
+    let preloaderEl = document.getElementById('preloader');
+    preloaderEl.classList.add('hidden');
+    preloaderEl.classList.remove('visible');
+  });

@@ -3,19 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Sphini's site</title>
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700|Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="main-container-body">
-    <header>
-      <nav class="navigation" id="navbar">
-        <div class="logo-wrapper"><a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип Sphini" width="70" height="70"></a></div>
-        <ul class="site-navigation">
-          <li><a href="#" class="current">Главная</a></li>
-          <li><a href="portfolio.html">Портфолио</a></li>
-          <li><a href="#">Блог</a></li>
-          <li><a href="#">Обо мне</a></li>
+    <header class="page-header">
+      <div class="page-header__logo">
+        <a class="page_header-logo-img" href="index.html">
+          <img src="img/logo.svg" alt="логотип Sphini" width="70" height="70">
+        </a>
+      </div>
+      <nav class="main-nav" id="navbar">
+        <ul class="main-nav__site-list site-list">
+          <li class="site-list__item"><a href="#" class="current">Главная</a></li>
+          <li class="site-list__item"><a href="portfolio.html">Портфолио</a></li>
+          <li class="site-list__item"><a href="#">Блог</a></li>
+          <li class="site-list__item"><a href="#">Обо мне</a></li>
         </ul>
       </nav>
     </header>
@@ -37,7 +40,7 @@
               <a class="sun-night" href="#"></a>
         </div>
       </section>
-      <section class="best-portfolio-container">
+      <!-- <section class="best-portfolio-container">
         <div class="best-portfolio-wrapper">
           <div class="images-container">
                   <div class="image-container">
@@ -45,7 +48,6 @@
                     <div class="image-last-action image-1-action">
                       <ul class="tools">
                         <li class="photoshop"></li>
-                        <!-- <li class="corel"></li> -->
                       </ul>
                       <div class="action-info-wrapper">
                         <h2>Супернова</h2>
@@ -75,7 +77,6 @@
                     <div class="image-last-action image-3-action">
                       <ul class="tools">
                         <li class="photoshop"></li>
-                        <!-- <li class="corel"></li> -->
                       </ul>
                       <div class="action-info-wrapper">
                         <h2>Сайт TTC Geltendorf e.V.</h2>
@@ -90,7 +91,6 @@
                     <div class="image-last-action image-4-action">
                       <ul class="tools">
                         <li class="photoshop"></li>
-                        <!-- <li class="corel"></li> -->
                       </ul>
                       <div class="action-info-wrapper">
                         <h2>Барабанщик</h2>
@@ -130,8 +130,6 @@
                       </div>
                     </div>
                   </div>
-                  <!-- <div class="image"></div> -->
-                  <!-- <div class="image"></div> -->
                 </div>
 
               </div>
@@ -180,6 +178,6 @@
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.9/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/script.js"></script> -->
   </body>
 </html>

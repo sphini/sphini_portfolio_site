@@ -14,16 +14,98 @@ input[type="radio"].visually-hidden {
 }
 
 body {
-  min-width: 1320px;
-  margin: 0;
-  padding: 0;
+  .clear-style();
   font-family: "Roboto", Arial, sans-serif;
   font-size: 14px;
-  line-height: 33px;
   font-weight: normal;
   color: #000000;
   background-color: white;
+
+  box-sizing: border-box;
 }
+
+.main-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.content {
+  position: absolute;
+  width: 1170px;
+  /* padding: 0 10px; */
+  left: 50%;
+  margin-left: -585px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes loading {
+  0% { opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 0;}
+}
+
+@keyframes error {
+  0% { opacity: 0;}
+  100%{fill: blue;}
+}
+
+@keyframes screen-back {
+  0% { opacity: 0;}
+  10% { opacity: 1;}
+  98% { opacity: 1;}
+  100%{ opacity: 0; }
+}
+
+.fil1 {fill:none}
+.fil3 {fill:#DAE4EA}
+.fil0 {fill:#E2ECF5}
+.fil2 {fill:#F0F4F7}
+.fil5 {fill:#F0F4F7}
+.fil4 {fill:white}
+.fil6 {fill:#F0F4F7;fill-rule:nonzero}
+
+#screen:hover #screen-on {
+  animation: error;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+#screen:hover #screen-back {
+  animation: screen-back;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  fill: #696969;
+}
+
+#screen:hover #switch-on {
+  fill: #00ED3B;
+}
+
+#screen:hover #loading {
+  fill: white;
+  animation: loading;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-fill-mode: forwards;
+}
+
+
+
+
+// .fil0 {
+//   fill: red;
+// }
 
 // @media (min-width: @tablet-width) {
 //   body {

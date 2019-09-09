@@ -3,43 +3,24 @@
   min-height: 700px;
   background-color: #ffffff;
 
-  padding-bottom: 20px;
+
   box-sizing: border-box;
   overflow: hidden;
   max-height: 1280px;
-}
-
-.main-block__container {
-  height: 100%;
-  background-color: #ffffff;
-  // background-image: url("../img/background-header.svg");
-  background-size: auto 70%;
-  background-position: center bottom ;
-  background-repeat: no-repeat;
-
   position: relative;
-  border-radius: 10px;
+  border-radius: 20px;
+  padding-bottom: 40px;
+  bottom: 20px;
 }
 
-.main-block__container-img {
-  // transform: translateY(0);
+.main-block__background {
   position: absolute;
-  bottom: 0;
-
-  // height: 500px;
-  // transform: translateY(50%);
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
 
 }
 
-.main-block__contaainer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
-}
 
 .main-block__btn-lang {
   position: absolute;
@@ -69,16 +50,23 @@
   bottom: 50px;
   opacity: 0.7;
   z-index: 2;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &:active {
-    background-color: red;
-  }
 }
 
-.checkbox:checked + .main-block__sun-night::before {
-  background-color: red;
+.main-block__sun-night:hover::before {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.main-block__night-switch:checked + .main-block__sun-night::before {
+  background-position: 0 -29px;
+}
+
+.main-block--night,
+.main-container--night,
+.main-block__container--night {
+  background-color: #2C4860;
+}
+
+.main-block__background--night {
+  filter: brightness(60%);
 }

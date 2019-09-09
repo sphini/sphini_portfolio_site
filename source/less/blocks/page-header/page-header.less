@@ -10,8 +10,6 @@
   justify-content: space-between;
   align-items: center;
   transition-duration: 1.5s;
-  // border-bottom: 1px solid red;
-
   padding: 20px 40px 20px 40px;
 }
 
@@ -34,16 +32,31 @@
 .page-header__site-list a {
   text-transform: uppercase;
   color: #000000;
+  opacity: 0.8;
 
   &:hover {
-    color: #e0392d;
+    // color: #e0392d;
+    opacity: 1;
   }
+}
+
+.page-header__site-list--night a {
+  color: white;
 }
 
 .site-list__item--current a {
   color: #e0392d;
+  opacity: 1;
 }
 
-.page_header__logo:hover {
-  opacity: 0.7;
+.page_header__logo {
+  opacity: 0.8;
+
+  &:hover{
+    opacity: 1;
+  }
+
+  &--night {
+    fill: white;
+  }
 }

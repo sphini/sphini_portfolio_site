@@ -5,62 +5,61 @@
     <title>Sphini's portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i%7CPT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="main-container">
 
-    <header></header>
+    <header class="page-header">
+      <a class="page_header__logo" href="index.html">
+        <svg class="page_header__logo-img" width="70" height="45"><use xlink:href="img/sprite.svg#sprite-logo"></use></svg>
+      </a>
+      <nav class="page-header__nav" id="navbar">
+        <ul class="page-header__site-list site-list">
+          <li class="site-list__item"><a href="index.html">Главная</a></li>
+          <li class="site-list__item site-list__item--current"><a href="portfolio.html">Портфолио</a></li>
+          <li class="site-list__item"><a href="#">Блог</a></li>
+          <li class="site-list__item"><a href="#">Обо мне</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <section class="full-page-container">
-          <nav class="navigation-portfolio">
-            <div class="logo-wrapper">
-              <a class="main-header-logo" href="index.html"><img src="img/logo.svg" alt="логотип Sphini" width="70" height="70"></a>
-            </div>
-            <ul class="site-navigation">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="#" class="current">Портфолио</a></li>
-              <li><a href="#">Блог</a></li>
-              <li><a href="#">Обо мне</a></li>
-            </ul>
-          </nav>
-            <div class="background-portfolio-container">
+      <section class="portfolio-block">
+        <div class="portfolio-filter"> <!-- background-portfolio-container  -->
+          <input class="visually-hidden portfolio-filter__checkbox" type="checkbox" name="vector" id="tab-vector" checked>
+          <label for="tab-vector" class="portfolio-filter__tab portfolio-filter__tab--vector" title="Вектор"><span class="visually-hidden tab-name">sdasd</span></label> <!-- tab-label  -->
+          <input class="visually-hidden portfolio-filter__checkbox" type="checkbox" name="raster" id="tab-raster">
+          <label for="tab-raster" class="portfolio-filter__tab portfolio-filter__tab--raster" title="Растровые изображения"><span class="visually-hidden tab-name">Растровые изображения</span></label> <!-- tab-label  -->
+          <input class="visually-hidden portfolio-filter__checkbox" type="checkbox" name="advert" id="tab-advert">
+          <label for="tab-advert" class="portfolio-filter__tab portfolio-filter__tab--advert" title="Рекламная продукция"><span class="visually-hidden tab-name">Рекламная продукция</span></label> <!-- tab-label  -->
+          <input class="visually-hidden portfolio-filter__checkbox" type="checkbox" name="3d" id="tab-3d">
+          <label for="tab-3d"  class="portfolio-filter__tab portfolio-filter__tab--3d" title="3д моделирование"><span class="visually-hidden tab-name">3д моделирование</span></label> <!-- tab-label  -->
+          <input class="visually-hidden portfolio-filter__checkbox" type="checkbox" name="web" id="tab-web">
+          <label for="tab-web"  class="portfolio-filter__tab portfolio-filter__tab--tab-web" title="Веб дизайн"><span class="visually-hidden tab-name">Веб дизайн</span></label> <!-- tab-label  -->
+        </div>
+        <div class="portfolio-content">
+          <div class="portfolio-content__image vector"><a href="#"><img src="/img/portfolio-thumbnails/fildjan-logo-thumb.jpg" alt="fildjan-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster 3d"><a href="#"><img src="/img/portfolio-thumbnails/jedysword-3d-thumb.jpg" alt="jedysword-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image vector"><a href="#"><img src="/img/portfolio-thumbnails/dc-logo-thumb.jpg" alt="dc-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster 3d"><a href="#"><img src="/img/portfolio-thumbnails/violin-3d-thumb.jpg" alt="violin-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image vector"><a href="#"><img src="/img/portfolio-thumbnails/slot-logo-thumb.jpg" alt="slot-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster"><a href="#"><img src="/img/portfolio-thumbnails/clouds-baloon-thumb.jpg" alt="clouds-baloon-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster advert"><a href="#"><img src="/img/portfolio-thumbnails/26days-visitcard-thumb.jpg" alt="26days-visitcard-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image web"><a href="#"><img src="/img/portfolio-thumbnails/lfs-site-thumb.jpg" alt="lfs-site-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster advert 3d"><a href="#"><img src="/img/portfolio-thumbnails/newyear-kms-thumb.jpg" alt="newyear-kms-thumb" width="100%" height="100%"></a></div>
 
 
-                  <input class="visually-hidden tabs-filter-checkbox" type="checkbox" name="vector" id="tab-vector">
-                  <label for="tab-vector" class="tab-label"><span class="tab-name">Вектор</span></label>
-                  <input class="visually-hidden tabs-filter-checkbox" type="checkbox" name="raster" id="tab-raster">
-                  <label for="tab-raster" class="tab-label"><span class="tab-name">Растровые изображения</span></label>
-                  <input class="visually-hidden tabs-filter-checkbox" type="checkbox" name="advert" id="tab-advert">
-                  <label for="tab-advert" class="tab-label"></label>
-                  <input class="visually-hidden tabs-filter-checkbox" type="checkbox" name="3d" id="tab-3d">
-                  <label for="tab-3d"  class="tab-label"></label>
-                  <input class="visually-hidden tabs-filter-checkbox" type="checkbox" name="web" id="tab-web">
-                  <label for="tab-web"  class="tab-label"></label>
 
-              <div class="portfolio-container">
-                <div class="portfolio-image vector raster"></div>
-                <div class="portfolio-image raster"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image vector"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image vector"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image raster"></div>
-                <div class="portfolio-image vector raster"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image vector"></div>
-                <div class="portfolio-image"></div>
-                <div class="portfolio-image"></div>
-              </div>
-            </div>
+          <div class="portfolio-content__image portfolio-content__image--dummy"></div>
+          <div class="portfolio-content__image portfolio-content__image--dummy"></div>
+          <div class="portfolio-content__image portfolio-content__image--dummy"></div>
+          <div class="portfolio-content__image portfolio-content__image--dummy"></div>
 
+        </div>
       </section>
     </main>
     <!-- <footer class="main-footer">
 
     </footer> -->
+    <script src="js/filter.js"></script>
   </body>
 </html>

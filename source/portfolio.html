@@ -37,15 +37,15 @@
           <label for="tab-web"  class="portfolio-filter__tab portfolio-filter__tab--tab-web" title="Веб дизайн"><span class="visually-hidden tab-name">Веб дизайн</span></label> <!-- tab-label  -->
         </div>
         <div class="portfolio-content">
-          <div class="portfolio-content__image vector"><a href="#"><img src="/img/portfolio-thumbnails/fildjan-logo-thumb.jpg" alt="fildjan-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image raster 3d"><a href="#"><img src="/img/portfolio-thumbnails/jedysword-3d-thumb.jpg" alt="jedysword-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image vector"><a href="#"><img src="/img/portfolio-thumbnails/dc-logo-thumb.jpg" alt="dc-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image raster 3d"><a href="#"><img src="/img/portfolio-thumbnails/violin-3d-thumb.jpg" alt="violin-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image vector"><a href="#"><img src="/img/portfolio-thumbnails/slot-logo-thumb.jpg" alt="slot-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image raster"><a href="#"><img src="/img/portfolio-thumbnails/clouds-baloon-thumb.jpg" alt="clouds-baloon-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image raster advert"><a href="#"><img src="/img/portfolio-thumbnails/26days-visitcard-thumb.jpg" alt="26days-visitcard-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image web"><a href="#"><img src="/img/portfolio-thumbnails/lfs-site-thumb.jpg" alt="lfs-site-thumb" width="100%" height="100%"></a></div>
-          <div class="portfolio-content__image raster advert 3d"><a href="#"><img src="/img/portfolio-thumbnails/newyear-kms-thumb.jpg" alt="newyear-kms-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image vector"><a href="1" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/fildjan-logo-thumb.jpg" alt="fildjan-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster 3d"><a href="2" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/jedysword-3d-thumb.jpg" alt="jedysword-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image vector"><a href="3" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/dc-logo-thumb.jpg" alt="dc-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster 3d"><a href="4" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/violin-3d-thumb.jpg" alt="violin-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image vector"><a href="5" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/slot-logo-thumb.jpg" alt="slot-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster"><a href="#" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/clouds-baloon-thumb.jpg" alt="clouds-baloon-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster advert"><a href="img/portfolio-big-pictures/26days-visitcard-fullsize.jpg" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/26days-visitcard-thumb.jpg" alt="26days-visitcard-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image web"><a href="#" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/lfs-site-thumb.jpg" alt="lfs-site-thumb" width="100%" height="100%"></a></div>
+          <div class="portfolio-content__image raster advert 3d"><a href="img/portfolio-big-pictures/newyear-kms-fullsize.jpg" target="_blank"><img class="portfolio-content__thumb" src="/img/portfolio-thumbnails/newyear-kms-thumb.jpg" alt="newyear-kms-thumb" width="100%" height="100%"></a></div>
 
 
 
@@ -57,10 +57,20 @@
           <div class="portfolio-content__image portfolio-content__image--dummy"></div>
         </div>
       </section>
+
+      <section class="big-picture  overlay  hidden">
+        <div class="big-picture__img">
+          <img class="portfolio-content__fullsize" src="img/portfolio-big-pictures/newyear-kms-fullsize.jpg" alt="Девушка в купальнике" width="100%" height="auto">
+        </div>
+        <button type="button" class="big-picture__cancel cancel" id="picture-cancel"><span class="visually-hidden">выход</span></button>
+      </section>
+
     </main>
     <!-- <footer class="main-footer">
 
     </footer> -->
     <script src="js/filter.js"></script>
+    <script src="js/overlay.js"></script>
+    <script src="js/hidebar.js"></script>
   </body>
 </html>

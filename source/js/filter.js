@@ -34,3 +34,33 @@ for (var i = 0; i < btnsFilter.length; i++) {
     checkFilter (currentChecked);                                 // отправляю в функцию сравнения коллекции с включенными вкладками фильтра
   });
 }
+
+
+
+
+// проба
+
+var mainContainer = document.querySelector(".main-container");
+var pageHeaderNav = document.querySelector(".page-header__nav");
+
+var currentKey = localStorage.getItem('timeOfDay');
+if (currentKey == 'night_on') {
+  mainContainer.classList.add("main-container--night");
+  pageHeaderNav.classList.add("page-header__nav--night");
+} else {
+  mainContainer.classList.remove("main-container--night");
+  pageHeaderNav.classList.remove("page-header__nav--night");
+}
+
+window.addEventListener('storage', function(event) {
+  console.log(window.localStorage[event.key]);
+    if (window.localStorage[event.key] == 'night_on') {
+      mainContainer.classList.add("main-container--night");
+      pageHeaderNav.classList.add("page-header__nav--night");
+      return;  // Если прислали не наши данные, ничего не делаем
+    } else {
+      mainContainer.classList.remove("main-container--night");
+    pageHeaderNav.classList.remove("page-header__nav--night"); }
+
+
+});

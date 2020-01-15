@@ -1,17 +1,16 @@
 .page-header {
-  position: fixed;
-  width: 100%;
-  max-width: 1920px;
-  box-sizing: border-box;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  transition-duration: 1.5s;
-  padding: 40px 40px 40px 40px;
-  background-color: white;
+  // position: fixed;
+  // width: 100%;
+  // max-width: 1920px;
+  // box-sizing: border-box;
+  // left: 50%;
+  // transform: translateX(-50%);
+  // z-index: 15;
+  // display: flex;
+  // justify-content: space-between;
+  // align-items: center;
+  // transition-duration: 1.5s;
+
 }
 
 .page-header__site-list {
@@ -23,10 +22,69 @@
   .clear-style();
   display: flex;
   align-items: center;
-  margin-right: 30px;
+  margin-right: 40px;
+
 
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.page-header__nav {
+  background-color: white;
+  top: 0;
+  right: 0;
+  position: fixed;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-left: 60px;
+  padding-bottom: 40px;
+  border-bottom-left-radius: 20px;
+  z-index: 20;
+  transition: top 1s;
+}
+
+.page_header__logo {
+  // margin-left: 40px;
+  position: fixed;
+  top: 30px;
+  left: 40px;
+  z-index: 30;
+
+  // &::before {
+  //   position: absolute;
+  //   content: '';
+  //   display: block;
+  //   width: 85px;
+  //   height: 85px;
+  //   top: -20px;
+  //   left: -7px;
+  //   border-radius: 50%;
+  //   z-index: 14;
+  //   background-color: white;
+  // }
+}
+
+.page_header__logo-circle {
+    position: absolute;
+    // content: '';
+    display: block;
+    width: 90px;
+    height: 90px;
+    top: -23px;
+    left: -10px;
+    border-radius: 50%;
+    z-index: 14;
+    background-color: white;
+}
+
+.page_header__logo-img {
+  position: relative;
+  z-index: 15;
+  opacity: 0.8;
+
+  &:hover{
+    opacity: 1;
   }
 }
 
@@ -48,14 +106,6 @@
 .site-list__item--current a {
   color: #e0392d;
   opacity: 1;
-}
-
-.page_header__logo {
-  opacity: 0.8;
-
-  &:hover{
-    opacity: 1;
-  }
 
   &--night {
     fill: white;

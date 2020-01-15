@@ -1,0 +1,111 @@
+.best-portfolio {
+  .clear-style();
+  display: flex;
+  height: 150%;
+  // justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.best-portfolio__container {
+  .clear-style();
+  position: relative;
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+  height: 550px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+.best-portfolio__overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  // display: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 60px;
+  z-index: -1;
+}
+
+.best-portfolio__overlay--image-1 {
+  background-color: rgba(148, 163, 10, 0.9);
+
+}
+
+.best-portfolio__overlay--image-2 {
+  background-color: rgba(227, 90, 36, 0.9);
+}
+
+.best-portfolio__overlay--image-3 {
+  background-color: rgba(25, 79, 103, 0.9);
+}
+
+.best-portfolio__overlay--image-4 {
+  background-color: rgba(0, 105, 91, 0.9);
+}
+
+.best-portfolio__overlay--image-5 {
+  background-color: rgba(35, 35, 35, 0.9);
+}
+
+.best-portfolio__overlay--image-6 {
+  background-color: rgba(224, 57, 45, 0.9);
+}
+
+.best-portfolio__tools {
+  margin-top: auto;
+}
+
+.btn-action {
+  background-color: transparent;
+  box-sizing: border-box;
+  padding: 15px 35px 15px 35px;
+  border: 2px solid #ffffff;
+  opacity: 0.5;
+  font-family: "Roboto", Arial, sans-serif;
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  // background-color: #e0392d;
+  text-transform: uppercase;
+  padding: 15px 50px 15px 50px;
+  border-radius: 50px;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+
+.best-portfolio__image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+
+.best-portfolio__container:hover .best-portfolio__overlay {
+  z-index: 10;
+}
+
+.best-portfolio__image--image-1 {
+  background-image: url("../img/best-works-img/image-1-main.jpg");
+}
+
+.best-portfolio__image--image-2 {
+  background-image: url("../img/best-works-img/image-2-main.jpg");
+}

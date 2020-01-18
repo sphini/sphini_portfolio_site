@@ -15,7 +15,6 @@
 
 .main-block__background {
   position: absolute;
-  // bottom: -5px;
   bottom: 50%;
   left: 50%;
   transform: translateX(-50%);
@@ -24,17 +23,12 @@
 
 .main-block__background-image {
   position: relative;
-  // transform: translateY(400px);
   transform: translateY(780px);
-  // top: 50%;
-  // transform: translateY(-50%);
 }
 
 .main-block__me-container {
   height: 100%;
   position: relative;
-  // right: 40px;
-
   vertical-align: middle;
 }
 
@@ -112,12 +106,56 @@
   background-position: 0 -29px;
 }
 
+.main-block__button {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-block__button span {
+  display: inline-block;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+
+}
+
+.main-block__button:hover span {
+  transform: translateX(-12px);
+}
+
+.main-block__button::after {
+  content: "";
+  position: absolute;
+
+  background-image: url("../img/down-arrow.svg");
+  background-size: 16px auto;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 27px;
+  top: -17px;
+  right: 17px;
+  z-index: 40;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.main-block__button:hover::after {
+  transform: translateY(40px);
+}
+
+
+
 .main-block--night,
 .main-container--night,
 .main-block__container--night,
 .page_header__logo-circle--night,
 .page-header__nav--night {
   background-color: #2C4860;
+}
+
+.main-block__greeting-title--night {
+  color: white;
 }
 
 .main-block__background--night {

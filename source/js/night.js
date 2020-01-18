@@ -7,6 +7,7 @@ var headerLogo = document.querySelector(".page_header__logo");
 var headerSiteList = document.querySelector(".page-header__site-list");
 var headerLogoCircle = document.querySelector(".page_header__logo-circle");
 var pageHeaderNav = document.querySelector(".page-header__nav");
+var mbGreetingTitle = document.querySelector(".main-block__greeting-title");
 
 var buttonSunNight = document.querySelector(".main-block__sun-night");
 
@@ -38,7 +39,7 @@ function switchNightOn() {
   headerSiteList.classList.add("page-header__site-list--night");
   headerLogoCircle.classList.add("page_header__logo-circle--night");
   pageHeaderNav.classList.add("page-header__nav--night");
-
+  mbGreetingTitle.classList.add("main-block__greeting-title--night");
 }
 
 function switchNightOff() {
@@ -50,6 +51,7 @@ function switchNightOff() {
   headerSiteList.classList.remove("page-header__site-list--night");
   headerLogoCircle.classList.remove("page_header__logo-circle--night");
   pageHeaderNav.classList.remove("page-header__nav--night");
+  mbGreetingTitle.classList.remove("main-block__greeting-title--night");
 }
 
 

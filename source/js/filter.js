@@ -1,4 +1,5 @@
 var itemCollection = document.getElementsByClassName("portfolio-content__image");
+var portfolioContentGreeting = document.getElementsByClassName("portfolio-content__greeting");
 
 function checkFilter (checkedClasses) {
   for (var s = 0; s < itemCollection.length; s++) {
@@ -32,6 +33,7 @@ for (var i = 0; i < btnsFilter.length; i++) {
   btnsFilter[i].addEventListener("click", function()  {           // навешиваю обработчики на кнопки фильтра
     var currentChecked = document.querySelectorAll("input[type=checkbox]:checked");       // при клике отбираю включенные (checked) вкладки
     checkFilter (currentChecked);                                 // отправляю в функцию сравнения коллекции с включенными вкладками фильтра
+    portfolioContentGreeting[0].style.display = 'none';
   });
 }
 

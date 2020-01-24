@@ -1,8 +1,8 @@
 .temporary-block {
-  height: 40vh;
+  height: 800px;
   min-height: 700px;
   background-color: #ffffff;
-  background-color: gray;
+  // background-color: gray;
 
   box-sizing: border-box;
   overflow: hidden;
@@ -14,17 +14,47 @@
 }
 
 .temporary-block__container {
-  background-color: red;
+  // background-color: red;
+  padding-top: 200px;
+  width: 1000px;
+  margin: auto;
 }
 
 
 .temporary-block__image {
-  background-image: url('../img/broken-wall.svg'),
-                    url('../img/broken-wall-back.jpg');
-  background-size: cover, auto 100%;
-  background-repeat: no-repeat, repeat-y;
-  background-attachment: local, scroll;
-  background-position: center, 200px 200px;
-  width: 450px;
-  height: 317px;
+
+  background-image:   url('../img/broken-wall.svg'),
+                      url('../img/broken-wall-back.jpg');
+  background-size: contain, 670px;
+  background-repeat: repeat, repeat;
+  background-attachment: scroll, fixed;
+  background-position: center, 550px 5px;
+  width: 550px;
+  height: 387px;
+  background-color: white;
+  float: left;
+}
+
+.temporary-block__text {
+  padding-top: 85px;
+}
+
+.temporary-block__text-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  margin-bottom: 25px;
+}
+
+.temporary-block__text-article {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #6b6a6a;
 }

@@ -23,11 +23,41 @@
   }
 }
 
-.best-portfolio__container-more {
-  background-color: red;
+.best-portfolio__more {
   width: 100%;
   margin-right: 0;
+  background: url("../img/best-works-more-back.jpg");
+  background-position: center;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+  }
 }
+
+.best-portfolio__more-container {
+  text-align: right;
+
+}
+
+.best-portfolio__more-button::after {
+  transform: rotate(-90deg);
+}
+
+.best-portfolio__more-button:hover::after {
+  transform: translateY(40px);
+}
+
+
+.best-portfolio__more-text {
+  margin-bottom: 45px;
+}
+
+
 
 .best-portfolio__overlay {
   position: absolute;

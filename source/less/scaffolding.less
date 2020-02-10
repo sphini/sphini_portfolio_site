@@ -16,12 +16,16 @@ input[type="radio"].visually-hidden {
 body {
   .clear-style();
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
   color: #000000;
   background-color: white;
+  line-height: 25px;
 
   box-sizing: border-box;
+
+
+
 }
 
 .main-container {
@@ -45,7 +49,7 @@ body {
   border-radius: 20px;
 }
 
-.main-title {
+.title-style {
   margin: 0;
   padding: 0;
   font-family: "Comfortaa", Arial, sans-serif;
@@ -118,6 +122,12 @@ a {
   100%{ opacity: 0; }
 }
 
+@keyframes smoke {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { transform: translateY(-90px); opacity: 0; }
+}
+
 .fil1 {fill:none}
 .fil3 {fill:#DAE4EA}
 .fil6 {fill:#DAE4EA}
@@ -125,6 +135,21 @@ a {
 .fil2 {fill:#F0F4F7}
 .fil5 {fill:#F0F4F7}
 .fil4 {fill:#F0F4F7;fill-rule:nonzero}
+.fil8 {fill:#E0392C;fill-rule:nonzero}
+.fil9 {fill:#EC442D;fill-rule:nonzero}
+
+
+
+#smoke_1, {
+  animation: smoke 0.5s linear infinite;
+  animation-duration: 3s;
+}
+
+#smoke_2, {
+  animation: smoke 1s linear infinite;
+  animation-duration: 4s;
+}
+
 
 #screen:hover #screen-on {
   animation: error;

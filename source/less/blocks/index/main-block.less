@@ -91,44 +91,16 @@
   background-position: 0 -29px;
 }
 
-.main-block__button {
-  position: relative;
-  overflow: hidden;
-}
-
-.main-block__button span {
-  display: inline-block;
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
-
-}
-
-.main-block__button:hover span {
-  transform: translateX(-12px);
-}
-
 .main-block__button::after {
-  content: "";
-  position: absolute;
-
   background-image: url("../img/down-arrow.svg");
   background-size: 16px auto;
-  background-repeat: no-repeat;
   width: 25px;
   height: 27px;
-  top: -17px;
-  right: 17px;
-  z-index: 40;
-  transition-property: transform;
-  transition-duration: 0.5s;
-  transition-timing-function: ease-out;
 }
 
 .main-block__button:hover::after {
-  transform: translateY(40px);
+  transform: translateY(43px);
 }
-
 
 
 .main-block--night,

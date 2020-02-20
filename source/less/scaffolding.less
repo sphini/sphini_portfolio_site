@@ -88,6 +88,8 @@ a {
 }
 
 .button {
+  position: relative;
+  overflow: hidden;
   font-family: "Roboto", Arial, sans-serif;
   display: inline-block;
   font-weight: 400;
@@ -98,7 +100,40 @@ a {
   text-transform: uppercase;
   border-radius: 15px;
   padding: 20px 40px 20px 40px;
+
+  transition-duration: 0.5s;
+  opacity: 0.8;
+
+  &:hover {
+    opacity: 1;
+
+  }
 }
+
+.button--special span {
+  display: inline-block;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+
+}
+
+.button--special:hover span {
+  transform: translateX(-12px);
+}
+
+.button--special::after {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  top: -17px;
+  right: 17px;
+  z-index: 40;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
 
 .red-dot {
   color: #e0392d;

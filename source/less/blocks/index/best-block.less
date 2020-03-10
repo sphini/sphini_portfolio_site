@@ -25,7 +25,7 @@
 
 .best-portfolio__more {
   width: 100%;
-  margin-right: 0;
+  // margin-right: 0;
   background: url("../img/best-works-more-back.png");
   background-position: center;
 
@@ -41,7 +41,6 @@
 
 .best-portfolio__more-container {
   text-align: right;
-
 }
 
 .best-portfolio__more-button::after {
@@ -157,4 +156,35 @@
 
 .best-portfolio__image--image-6 {
   background-image: url("../img/best-works-img/image-6.jpg");
+}
+
+.social__button::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  // background-color: black;
+  background-size: contain;
+  margin:auto;
+}
+
+.social__button--fb {
+  background-color: #e35a24;
+    &::after {
+    background-image: url("../img/fb-icon.svg");
+  }
+}
+
+.social__button--inst {
+  background-color: #94a30a;
+    &::after {
+    background-image: url("../img/inst-icon.svg");
+  }
+}
+
+.social__button--vk {
+  background-color: #00695b;
+    &::after {
+    background-image: url("../img/vk-icon.svg");
+  }
 }

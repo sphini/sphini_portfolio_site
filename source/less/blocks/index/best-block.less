@@ -5,22 +5,37 @@
   // justify-content: space-between;
   flex-wrap: wrap;
   padding-bottom: 20px;
+
 }
 
 .best-portfolio__container {
   .clear-style();
+  text-align: center;
   position: relative;
   box-sizing: border-box;
   width: calc(50% - 10px);
   height: 550px;
   margin-right: 20px;
   margin-bottom: 20px;
-  border-radius: 15px;
+  border-radius: 20px;
   overflow: hidden;
 
   &:nth-child(2n) {
     margin-right: 0;
   }
+}
+
+.action-info__text {
+  // color: #e7e7e7;
+  margin-bottom: 40px;
+}
+
+.action-info__type {
+  color: #dcdcdc;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  right: 40px;
 }
 
 .best-portfolio__more {
@@ -60,7 +75,9 @@
   margin-bottom: 45px;
 }
 
-
+.action-info__wrapper {
+  color: white;
+}
 
 .best-portfolio__overlay {
   position: absolute;
@@ -71,11 +88,15 @@
   display: flex;
   // display: none;
   flex-direction: column;
+  justify-content: center;
   box-sizing: border-box;
   padding-left: 40px;
   padding-right: 40px;
-  padding-bottom: 60px;
+  // padding-bottom: 60px;
   z-index: -1;
+
+  opacity: 0;
+
 }
 
 .best-portfolio__overlay--image-1 {
@@ -127,11 +148,16 @@
   background-size: cover;
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 
 .best-portfolio__container:hover .best-portfolio__overlay {
   z-index: 10;
+
+  opacity: 1;
+  transition-duration: 0.5s;
+  transition-delay: 0.1s;
+
 }
 
 .best-portfolio__image--image-1 {
@@ -156,35 +182,4 @@
 
 .best-portfolio__image--image-6 {
   background-image: url("../img/best-works-img/image-6.jpg");
-}
-
-.social__button::after {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 30px;
-  // background-color: black;
-  background-size: contain;
-  margin:auto;
-}
-
-.social__button--fb {
-  background-color: #e35a24;
-    &::after {
-    background-image: url("../img/fb-icon.svg");
-  }
-}
-
-.social__button--inst {
-  background-color: #94a30a;
-    &::after {
-    background-image: url("../img/inst-icon.svg");
-  }
-}
-
-.social__button--vk {
-  background-color: #00695b;
-    &::after {
-    background-image: url("../img/vk-icon.svg");
-  }
 }

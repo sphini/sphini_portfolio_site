@@ -1,5 +1,5 @@
 
-var portfolioContent = document.getElementsByClassName("portfolio-content");
+var portfolioContent = document.getElementsByClassName("portfolio-images");
 var overlayContent = document.getElementsByClassName("portfolio-content__fullsize");
 var bigPicture = document.getElementsByClassName("big-picture");
 

@@ -6,7 +6,9 @@
   margin: auto;
   width: 500px;
   text-align: center;
-  margin-top: 25%;
+  // margin-top: 25%;
+  // top: 50%;
+  // transform: translateY(-50%);
   position: relative;
   z-index: 20;
 }
@@ -41,4 +43,16 @@
 .feedback-form__button {
   display: inline-block;
   border-style: none;
+}
+
+.feedback__background-image {
+  position: relative;
+  transform: translateY(1150px);
+}
+
+
+@media (max-width: @mobile-width) {
+  .feedback-block {
+    margin-bottom: 0;
+  }
 }

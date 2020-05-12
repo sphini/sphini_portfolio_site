@@ -169,17 +169,58 @@
 }
 
 .best-portfolio__image--image-3 {
-  background-image: url("../img/best-works-img/image-3.jpg");
+  background-image: url("../img/best-works-img/image-3-main.jpg");
 }
 
 .best-portfolio__image--image-4 {
-  background-image: url("../img/best-works-img/image-4.jpg");
+  background-image: url("../img/best-works-img/image-4-main.jpg");
 }
 
 .best-portfolio__image--image-5 {
-  background-image: url("../img/best-works-img/image-5.jpg");
+  background-image: url("../img/best-works-img/image-5-main.jpg");
 }
 
 .best-portfolio__image--image-6 {
-  background-image: url("../img/best-works-img/image-6.jpg");
+  background-image: url("../img/best-works-img/image-6-main.jpg");
+}
+
+
+
+@media (max-width: @tablet-width) {
+  .best-portfolio {
+    display: block;
+  }
+
+  .best-portfolio__container {
+    width: 100%;
+  }
+
+  .best-portfolio__more {
+    background-position: center;
+
+    &::after {
+      opacity: 0.95;
+    }
+  }
+
+  .best-portfolio__more-content {
+
+  }
+
+  .best-portfolio__more-container {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+  }
+
+}
+
+
+@media (max-width: @mobile-width) {
+  .best-portfolio__container,
+  .best-portfolio__image {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+
 }

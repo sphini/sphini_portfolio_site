@@ -16,7 +16,7 @@ input[type="radio"].visually-hidden {
 body {
   .clear-style();
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   color: #000000;
   background-color: white;
@@ -42,7 +42,8 @@ body {
 
 .fullpage-sizer {
   height: 100vh;
-  min-height: 700px;
+  min-height: 768px;
+  max-height: 1000px;
   box-sizing: border-box;
   overflow: hidden;
   max-height: 1280px;
@@ -211,4 +212,12 @@ a {
   animation-duration: 2s;
   animation-iteration-count: 2;
   animation-fill-mode: forwards;
+}
+
+
+@media (max-width: @mobile-width) {
+  .fullpage-sizer {
+    min-height: 300px;
+  }
+
 }

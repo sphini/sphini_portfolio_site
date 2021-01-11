@@ -1,8 +1,8 @@
 .aboutme-block {
   margin-top: 120px;
-  background-color: #ced5e6; /* Для старых браузров */
-  // background-color: linear-gradient(to right, #ced5e6, #e2e8f2);
-  background: linear-gradient(to right, #ced5e6, #e2e8f2);
+  // background-color: #ced5e6; /* Для старых браузров */
+  background-color: #e2ebf4;
+  // background: linear-gradient(to right, #ced5e6, #e2e8f2);
   border-radius: 20px;
 
   // background-image: url("../img/right-arrow.svg");
@@ -11,9 +11,8 @@
 .aboutme-block__container {
   margin: auto;
   width: 1100px;
-  background-image: url("../img/aboutme-back.png");
-  background-repeat: no-repeat;
-  background-position: center ;
+
+
 }
 
 .awards-block {
@@ -25,6 +24,21 @@
   padding-top: 100px;
   padding-bottom: 150px;
   padding-left: 520px;
+  position: relative;
+}
+
+.aboutme-block__greeting::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: -150px;
+  width: 800px;
+  height:700px;
+  background-image: url("../img/aboutme-back.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 700px;
 }
 
 .aboutme-block__title {

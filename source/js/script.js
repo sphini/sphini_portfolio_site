@@ -1,7 +1,7 @@
 $(function(){
 
         $("#typing").typed({
-            strings: ["дизайнер", "верстальщик", "фронтенд разработчик", "веб дизайнер"],
+            strings: ["welcome", "welcome", "welcome", "welcome"],
             typeSpeed: 120,
             backDelay: 3500,
             startDelay: 500,

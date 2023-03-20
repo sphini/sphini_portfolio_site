@@ -55,11 +55,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Comfortaa", Arial, sans-serif;
+  // font-family: "code_pro_black", Arial, sans-serif;
   font-weight: 700;
   font-size: 38px;
   line-height: 48px;
   margin-bottom: 25px;
 }
+
+
 
 .main-text {
   margin: 0;
@@ -100,16 +103,19 @@ a {
   text-decoration: none;
   color: #ffffff;
   background-color: #e0392d;
+
   text-transform: uppercase;
   border-radius: 15px;
   padding: 20px 40px 20px 40px;
 
   transition-duration: 0.5s;
-  opacity: 0.7;
+  // opacity: 0.7;
+  filter: grayscale(30%);
 
   &:hover {
-    opacity: 1;
-
+    // opacity: 1;
+    // background-color: #ad1308;
+    filter: grayscale(0%);
   }
 }
 

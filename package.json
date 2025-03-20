@@ -20,7 +20,7 @@
   "homepage": "https://github.com/sphini/sphini_portfolio_site#readme",
   "devDependencies": {
     "autoprefixer": "^9.5.1",
-    "browser-sync": "2.26.x",
+    "browser-sync": "2.27.x",
     "del": "^5.0.0",
     "gulp": "4.0.x",
     "gulp-csso": "^3.0.1",
